@@ -1,4 +1,3 @@
-lineNum=0
 Words=[]
 wordlist = open('wordlist.txt', 'r')
 for line in wordlist:
@@ -7,13 +6,14 @@ for line in wordlist:
         Word+=letter
         word = Word.replace("\n", "")
     Words.append(word)
-    lineNum+=1
 
 ScrambledList = open('Encrypted.txt', 'r')
 for cypher in ScrambledList:
     possibleWords = Words
     print(cypher)
+    matches = []
     for letter in cypher:
         print (letter)
-        match = [word for word in possibleWords if letter in word]
-    print (match)
+        matches.append[word for word in possibleWords if letter in word]
+    for match in matches:
+        if match in matches
